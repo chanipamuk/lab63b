@@ -6,7 +6,7 @@
 * สาย USB
 * USB to serial port
 ## ศึกษาข้อมูลเบื้องต้น
-* [Githubของอาจารย์ชุมพล](https://github.com/choompol-boonmee/lab63b)
+* [Github ของอาจารย์ชุมพล](https://github.com/choompol-boonmee/lab63b)
 * [คลิปการทดลองที่ 1](https://www.youtube.com/watch?v=NLIUsWLEpmg)
 ## วิธีการทำการทดลอง
  1. ทำการต่อสาย USB เข้ากับตัว USB to serial port 
