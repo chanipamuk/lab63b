@@ -6,7 +6,8 @@
 * สาย USB
 * USB to serial port
 ## ศึกษาข้อมูลเบื้องต้น
-*
+* [Githab ของอาจารย์ชุมพล] (https://github.com/choompol-boonmee/lab63b)
+* [คลิปการทดลองที่ 1] (https://www.youtube.com/watch?v=NLIUsWLEpmg)
 ## วิธีการทำการทดลอง
  1. ทำการต่อสาย USB เข้ากับตัว USB to serial port 
  2. ต่อ ESP-01 เข้ากับตัว Serial port
