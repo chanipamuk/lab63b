@@ -10,21 +10,21 @@
 * [Github ของอาจารย์ชุมพล](https://github.com/choompol-boonmee/lab63b)
 * [คลิปการทดลองที่ 5](https://www.youtube.com/watch?v=VX-QNQcO-b4)
 ## วิธีการทำการทดลอง
- 1. ทำการต่อสาย USB เข้ากับตัว USB to serial port 
+ 1. ทำการต่อสาย USB เข้ากับตัว USB to Serial port 
  2. ต่อ ESP-01 เข้ากับตัว Serial port
  3. เข้าโปรแกรม เพื่อทำการรันโปรแกรม 
- 4. ใช้คำสั่ง cd เพื่อทำการ path ไปยังโฟลเดอร์ทำการบันทึก code ไว้ โดย code ที่ใช้จำเป็นจะต้องใส่ชื่อไวไฟและรหัสไวไฟลงไปด้วย จะมีรายละเอียดดังต่อไปนี้ดังต่อไปนี้ (รูป1,2)
- 6. หลังจากนั้นใช้คำสั่ง `pio run -t upload` เพื่อทำการอัปโปรแกรมลงใน microcontroller (รูป3) 
- 7. ในระหว่างรอการอัปโหลดให้ทำการกดปุ่มสีดำและปุ่ม Reset บริเวณ microcontroller เพื่อให้ microcontroller รับโปรแกรมใหม่เข้าไป (รูป4)
- 8. เมื่อลงโปรแกรมเสร็จ เราจะทำการเปิด เว็บ browser แล้วกดปุ่ม reset เพื่อให้เริ่มการทำงานใหม่ โดยเริ่มจาก ค้นหาไวไฟ เชื่อมต่อไวไฟ พร้อมบอก IP address
- 9. ทำการคัดลอก IP address ลงใน browser เพื่อทำการทดสอบ
- 10. ใช้คำสั่ง `pio run device monitor` แล้วกดปุ่ม reset จะได้เป็น IP address เดิมที่เราได้ทำการทดสอบไปเมื่อขั้นตอนที่ 8.
+ 4. ใช้คำสั่ง cd เพื่อทำการ path ไปยังโฟลเดอร์ที่ทำการบันทึก code ไว้ โดย code ที่ใช้จำเป็นจะต้องใส่ชื่อไวไฟและรหัสไวไฟลงไปด้วย จะมีรายละเอียดดังต่อไปนี้ ![GitHub Logo](https://github.com/chanipamuk/lab63b/blob/main/image/Lab5/5_%E0%B9%92%E0%B9%91%E0%B9%90%E0%B9%93%E0%B9%92%E0%B9%93_0.jpg?raw=true)![GitHub Logo](https://github.com/chanipamuk/lab63b/blob/main/image/Lab5/5_%E0%B9%92%E0%B9%91%E0%B9%90%E0%B9%93%E0%B9%92%E0%B9%93_1.jpg?raw=true)
+ 6. หลังจากนั้นใช้คำสั่ง `pio run -t upload` เพื่อทำการอัปโปรแกรมลงใน Microcontroller ![GitHub Logo](https://github.com/chanipamuk/lab63b/blob/main/image/Lab5/5_%E0%B9%92%E0%B9%91%E0%B9%90%E0%B9%93%E0%B9%92%E0%B9%93_2.jpg?raw=true)
+ 7. ในระหว่างรอการอัปโหลดให้ทำการกดปุ่มสีดำและปุ่ม Reset บริเวณ Microcontroller เพื่อให้ Microcontroller รับโปรแกรมใหม่เข้าไป ![GitHub Logo](https://github.com/chanipamuk/lab63b/blob/main/image/Lab5/5_%E0%B9%92%E0%B9%91%E0%B9%90%E0%B9%93%E0%B9%92%E0%B9%93_3.jpg?raw=true)
+ 8. เมื่อลงโปรแกรมเสร็จ เราจะทำการเปิด เว็บ Browser แล้วกดปุ่ม Reset เพื่อให้เริ่มการทำงานใหม่ โดยเริ่มจาก ค้นหาไวไฟ เชื่อมต่อไวไฟ พร้อมบอก IP address
+ 9. ทำการคัดลอก IP Address ลงใน Browser เพื่อทำการทดสอบ
+ 10. ใช้คำสั่ง `pio run device monitor` แล้วกดปุ่ม reset จะได้เป็น IP Address เดิมที่เราได้ทำการทดสอบไปเมื่อขั้นตอนที่ 8.
 ## การบันทึกผลการทดลอง
 * ผลการทดลองเมื่อทำการรันโปรแกรมที่ลงเสร็จ : hello1
 * ผลการทดลองเมื่อทำการกด Reset ก่อนใช้คำสั่ง `pio run device monitor` : hello2,hello3,...
 * ใช้คำสั่ง `pio run device monitor` แล้วกดปุ่ม reset : IP address 
 ## อภิปรายผลการทดลอง
-* จากผลการทดลองที่เกิดขึ้นจะเห็นได้ว่าเมื่อทำการรันโปรแกรมจะทำการรันเป็น loop ไปเรื่อยๆตามคำสั่งที่ได้เขียนและอัปโหลดลงใน microcontroller ซึ่งผลลัพธ์ที่เกิดขึ้นคือ Microcontroller จะทำการค้นหาไวไฟ เชื่อมต่อไวไฟ พร้อมบอก IP address และหากเรากดที่ปุ่ม Reset ที่ microcontroller เราจะได้ IP address ก่อนหน้า
+* จากผลการทดลองที่เกิดขึ้นจะเห็นได้ว่าเมื่อทำการรันโปรแกรมจะทำการรันเป็น loop ไปเรื่อยๆตามคำสั่งที่ได้เขียนและอัปโหลดลงใน Microcontroller ซึ่งผลลัพธ์ที่เกิดขึ้นคือ Microcontroller จะทำการค้นหาไวไฟ เชื่อมต่อไวไฟ พร้อมบอก IP Address และหากเรากดที่ปุ่ม Reset ที่ Microcontroller เราจะได้ IP Address ก่อนหน้า
 ## คำถามหลังการทดลอง
 * คำถาม 
 
