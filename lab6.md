@@ -13,13 +13,13 @@
  1. ทำการต่อสาย USB เข้ากับตัว USB to Serial port 
  2. ต่อ ESP-01 เข้ากับตัว Serial port
  3. เข้าโปรแกรม เพื่อทำการรันโปรแกรม 
- 4. ใช้คำสั่ง cd เพื่อทำการ path ไปยังโฟลเดอร์ที่ทำการบันทึก codeไว้ โดยจะต้องมีการตั้งชื่อให้กับไวไฟ,กำหนด IP ฤddress local, กำหนด IP ฤddress gateway,กำหนด IP ฤddress subnet จะมีรายละเอียดดังต่อไปนี้ดังต่อไปนี้ ![GitHub Logo](https://github.com/chanipamuk/lab63b/blob/main/image/Lab6/LAB6_%E0%B9%92%E0%B9%91%E0%B9%90%E0%B9%93%E0%B9%92%E0%B9%93_0.jpg?raw=true)
+ 4. ใช้คำสั่ง cd เพื่อทำการ path ไปยังโฟลเดอร์ที่ทำการบันทึก codeไว้ โดยจะต้องมีการตั้งชื่อให้กับไวไฟ,กำหนด IP address local, กำหนด IP address gateway,กำหนด IP address subnet จะมีรายละเอียดดังต่อไปนี้ดังต่อไปนี้ ![GitHub Logo](https://github.com/chanipamuk/lab63b/blob/main/image/Lab6/LAB6_%E0%B9%92%E0%B9%91%E0%B9%90%E0%B9%93%E0%B9%92%E0%B9%93_0.jpg?raw=true)
  5. เตรียม เว็บเซอร์เวอร์ 1 ตัว แล้วกำหนดค่าต่างๆตามรูปต่อไปนี้  ![GitHub Logo](https://github.com/chanipamuk/lab63b/blob/main/image/Lab6/LAB6_%E0%B9%92%E0%B9%91%E0%B9%90%E0%B9%93%E0%B9%92%E0%B9%93_1.jpg?raw=true)
  6. หลังจากนั้นใช้คำสั่ง `pio run -t upload` เพื่อทำการอัปโปรแกรมลงใน Microcontroller ![GitHub Logo](https://github.com/chanipamuk/lab63b/blob/main/image/Lab6/LAB6_%E0%B9%92%E0%B9%91%E0%B9%90%E0%B9%93%E0%B9%92%E0%B9%93_2.jpg?raw=true)
  7. ในระหว่างรอการอัปโหลดให้ทำการกดปุ่มสีดำและปุ่ม Reset บริเวณ Microcontroller เพื่อให้ Microcontroller รับโปรแกรมใหม่เข้าไป 
  8. เมื่อลงโปรแกรมเสร็จ Microcontroller สร้าง Wifi AP ขึ้นมา![GitHub Logo](https://github.com/chanipamuk/lab63b/blob/main/image/Lab6/LAB6_%E0%B9%92%E0%B9%91%E0%B9%90%E0%B9%93%E0%B9%92%E0%B9%93_3.jpg?raw=true)
  9. ใช้คำสั่ง `pio run device monitor` แล้วกด reset ![GitHub Logo](https://github.com/chanipamuk/lab63b/blob/main/image/Lab6/LAB6_%E0%B9%92%E0%B9%91%E0%B9%90%E0%B9%93%E0%B9%92%E0%B9%93_4.jpg?raw=true)
- 10. ทดสอบโดยลอกใช้โทรศัพ์ค้นหา Wifi ที่เราได้สร้างไว้
+ 10. ทดสอบโดยลองใช้โทรศัพ์ค้นหา Wifi ที่เราได้สร้างไว้
 ## การบันทึกผลการทดลอง
 * ผลการทดลองเมื่อทำการรันโปรแกรมที่ลงเสร็จ ![GitHub Logo](https://github.com/chanipamuk/lab63b/blob/main/image/Lab6/LAB6_%E0%B9%92%E0%B9%91%E0%B9%90%E0%B9%93%E0%B9%92%E0%B9%93_5.jpg?raw=true)
 ## อภิปรายผลการทดลอง
