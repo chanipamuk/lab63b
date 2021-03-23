@@ -5,12 +5,12 @@
 ## อุปกรณที่ใช้
 * บอร์ด ESP-01 (microcontroller)
 * สาย USB
-* USB to serial port
+* USB to Serial port
 ## ศึกษาข้อมูลเบื้องต้น
 * [Github ของอาจารย์ชุมพล](https://github.com/choompol-boonmee/lab63b)
 * [คลิปการทดลองที่ 1](https://www.youtube.com/watch?v=NLIUsWLEpmg)
 ## วิธีการทำการทดลอง
- 1. ทำการต่อสาย USB เข้ากับตัว USB to serial port 
+ 1. ทำการต่อสาย USB เข้ากับตัว USB to Serial port 
  2. ต่อ ESP-01 เข้ากับตัว Serial port
  3. เข้าโปรแกรม เพื่อทำการรันโปรแกรม 
  4. ใช้คำสั่ง cd เพื่อทำการ path ไปยังโฟลเดอร์ที่ทำการบันทึก codeไว้ โดย code จะมีรายละเอียดดังต่อไปนี้ ![GitHub Logo](https://github.com/chanipamuk/lab63b/blob/main/image/Lab1/LAB1_%E0%B9%92%E0%B9%91%E0%B9%90%E0%B9%93%E0%B9%92%E0%B9%93_0.jpg?raw=true)
