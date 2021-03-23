@@ -6,7 +6,7 @@
 ## อุปกรณที่ใช้
 * บอร์ด ESP-01 (microcontroller)
 * สาย USB
-* USB to serial port
+* USB to Serial port
 * Adapter
 * สาย port 0 และ port 1
 * LED เปล่งแสง
@@ -16,7 +16,7 @@
 * [คลิปการทดลองที่ 3.1](https://www.youtube.com/watch?v=CCnN1WJsXQY)
 * [คลิปการทดลองที่ 3.2](https://www.youtube.com/watch?v=6JnhaUILGuw) 
 ## วิธีการทำการทดลอง
- 1. ทำการต่อสาย USB เข้ากับตัว USB to serial port 
+ 1. ทำการต่อสาย USB เข้ากับตัว USB to Serial port 
  2. ต่อ Adapter เข้ากับตัว Serial port โดย Adapter นั้นจะต่อเข้ากับ port 0 และ port 1 ซึ่งต่อเข้ากับ LED เปล่งแสง
  3. ต่อ Microcontroller ESP-01 เข้ากับ Serial port ![GitHub Logo](https://github.com/chanipamuk/lab63b/blob/main/image/Lab3/LAB3_%E0%B9%92%E0%B9%91%E0%B9%90%E0%B9%93%E0%B9%92%E0%B9%93_0.jpg?raw=true)![GitHub Logo](https://github.com/chanipamuk/lab63b/blob/main/image/Lab3/LAB3_%E0%B9%92%E0%B9%91%E0%B9%90%E0%B9%93%E0%B9%92%E0%B9%93_1.jpg?raw=true)
  4. เข้าโปรแกรม เพื่อทำการรันโปรแกรม 
