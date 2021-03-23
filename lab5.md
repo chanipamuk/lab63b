@@ -5,7 +5,7 @@
 ## อุปกรณที่ใช้
 * บอร์ด ESP-01 (microcontroller)
 * สาย USB
-* USB to serial port
+* USB to Serial port
 ## ศึกษาข้อมูลเบื้องต้น
 * [Github ของอาจารย์ชุมพล](https://github.com/choompol-boonmee/lab63b)
 * [คลิปการทดลองที่ 5](https://www.youtube.com/watch?v=VX-QNQcO-b4)
