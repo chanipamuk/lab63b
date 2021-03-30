@@ -18,7 +18,44 @@
 * [เซนเซอร์วัดความสว่าง](https://www.myarduino.net/article/210/%E0%B8%AA%E0%B8%AD%E0%B8%99%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%87%E0%B8%B2%E0%B8%99-arduino-%E0%B9%80%E0%B8%8B%E0%B9%87%E0%B8%99%E0%B9%80%E0%B8%8B%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%AA%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%A1%E0%B9%81%E0%B8%AA%E0%B8%87-%E0%B9%80%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B9%84%E0%B8%9F%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B9%81%E0%B8%AA%E0%B8%87)
 * [เซนเซอร์วัดความชื้นในดิน](https://www.ab.in.th/article/10/%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B9%80%E0%B8%88%E0%B8%84%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%A3%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%95%E0%B9%89%E0%B8%99%E0%B9%84%E0%B8%A1%E0%B9%89%E0%B8%AD%E0%B8%B1%E0%B8%95%E0%B9%82%E0%B8%99%E0%B8%A1%E0%B8%B1%E0%B8%95%E0%B8%B4-%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2-arduino-%E0%B8%A3%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%96%E0%B8%B9%E0%B8%81-%E0%B8%9E%E0%B8%A3%E0%B9%89%E0%B8%AD%E0%B8%A1-code-%E0%B8%95%E0%B8%B1%E0%B8%A7%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%87)
 ## Code ที่ใช้ในการทดลอง
+ const int analogPin1 = A0;
+ const int analogPin2 = A1;
+ const int ledPin = 2;
+ const int relay = 3;
+ int sensorValue1 = 0;
+ int sensorValue2 = 0;
+ int outputValue = 0;
+void setup() {
+  Serial.begin(9600);
+  pinMode(relay, OUTPUT);
+  pinMode(ledPin, OUTPUT);  
+}
 
+void loop() {
+  sensorValue = analogRead(analogPin1); 
+  val = analogRead(analogPin1);
+  sensorValue = analogRead(analogInPin2);
+  outputValue = map(sensorValue, 0, 1023, 100, 0);
+  if (val < 600) { 
+    digitalWrite(ledPin, HIGH); 
+  }
+  else {
+    digitalWrite(ledPin, LOW); 
+  }
+  
+  Serial.print("Soil Moisture = ");
+  Serial.print(outputValue);
+  Serial.println(" %");
+  
+   if (outputValue <= 40) {  
+    digitalWrite(relay, HIGH);
+  }
+
+  else {
+    digitalWrite(relay, LOW);
+  }
+  delay(1800000);
+}
 ## วิธีการทำการทดลอง
 
 ## การบันทึกผลการทดลอง
