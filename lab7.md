@@ -20,7 +20,15 @@
 ## Code ที่ใช้ในการทดลอง
 
 ## วิธีการทำการทดลอง
-1. 
+1. ทำการต่อสาย USB เข้ากับตัว USB to Serial port
+2. ต่อ Arduino Uno R3 เข้ากับ Serial Port
+3. ต่อ LDR Photorsistor Sensor Module เข้ากับ Arduino Uno R3 ที่ port A0
+4. ต่อ หลอด LED เข้ากับ Arduino Uno R3 ที่ port 2
+5. ต่อ Soil Moisture Sensor Module เข้ากับ Arduino Uno R3 ที่ port A1
+6. ต่อ Module relay เข้ากับ Arduino Uno R3 ที่ port 3
+7. เข้าโปรเเกรม เพื่อทำการรันโปรเเกรม
+8. กดปุ่ม Upload โปรเเกรมลงบน Arduino Uno R3
+9. เมื่อลงโปรเเกรมเสร็จ ตัว Arduino Uno R3 จะทำการรันโค้ดเเละเช็คค่าที่วัดจาก Soil Moisture Sensor Module เเละ LDR Photoresistor Sensor Module เเละจะทำตามเงี่อนไขที่เขียนโปรเเกรมไว้  
 ## การบันทึกผลการทดลอง
 ผลการทดลอง 
 1. แสงสว่างไม่มากพอ จะเป็นผลทำให้ไฟ LED ติด 
